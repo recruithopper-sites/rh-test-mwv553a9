@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{BRAND_NAME}} | {{META_TAGLINE}}</title>
+  <meta name="description" content="{{META_DESCRIPTION}}">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="canonical" href="https://{{DOMAIN}}/">
+</head>
+<body>
+
+  <header class="nav" id="top">
+    <div class="container nav-inner">
+      <a href="#top" class="brand" aria-label="{{BRAND_NAME}} home">
+        <span class="brand-mark">{{BRAND_SHORT}}</span>
+        <span class="brand-sub">{{BRAND_SUB}}</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links">
+        <a href="#employers">Employers</a>
+        <a href="#candidates">Candidates</a>
+        <a href="#process">Process</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="btn btn-small">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-glow"></div>
+      <div class="container hero-inner">
+        <img src="assets/{{LOGO_FILE}}" alt="{{BRAND_NAME}} logo" class="hero-logo">
+        <h1>{{HERO_HEADLINE_START}}<span class="metal">{{HERO_HEADLINE_ACCENT}}</span>{{HERO_HEADLINE_END}}</h1>
+        <p class="lead">{{HERO_LEAD}}</p>
+        <div class="hero-ctas">
+          <a href="#employers" class="btn">I'm Hiring</a>
+          <a href="#candidates" class="btn btn-outline">I'm Looking for a Role</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALUE STRIP -->
+    <section class="strip">
+      <div class="container strip-grid">
+        <div><h3>{{STRIP_1_TITLE}}</h3><p>{{STRIP_1_TEXT}}</p></div>
+        <div><h3>{{STRIP_2_TITLE}}</h3><p>{{STRIP_2_TEXT}}</p></div>
+        <div><h3>{{STRIP_3_TITLE}}</h3><p>{{STRIP_3_TEXT}}</p></div>
+      </div>
+    </section>
+
+    <!-- EMPLOYERS -->
+    <section class="section" id="employers">
+      <div class="container two-col">
+        <div>
+          <p class="eyebrow">For Employers</p>
+          <h2>{{EMPLOYERS_HEADING}}</h2>
+          <p>{{EMPLOYERS_TEXT}}</p>
+          <ul class="checks">
+            <li>{{ROLE_1}}</li>
+            <li>{{ROLE_2}}</li>
+            <li>{{ROLE_3}}</li>
+            <li>{{ROLE_4}}</li>
+            <li>{{ROLE_5}}</li>
+          </ul>
+          <a href="#contact" class="btn">Request Candidates</a>
+        </div>
+        <div class="card-stack">
+          <div class="card">
+            <span class="card-num">01</span>
+            <h3>{{EMPLOYER_CARD_1_TITLE}}</h3>
+            <p>{{EMPLOYER_CARD_1_TEXT}}</p>
+          </div>
+          <div class="card">
+            <span class="card-num">02</span>
+            <h3>{{EMPLOYER_CARD_2_TITLE}}</h3>
+            <p>{{EMPLOYER_CARD_2_TEXT}}</p>
+          </div>
+          <div class="card">
+            <span class="card-num">03</span>
+            <h3>{{EMPLOYER_CARD_3_TITLE}}</h3>
+            <p>{{EMPLOYER_CARD_3_TEXT}}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CANDIDATES -->
+    <section class="section section-alt" id="candidates">
+      <div class="container two-col reverse">
+        <div class="card-stack">
+          <div class="card">
+            <h3>{{CANDIDATE_CARD_1_TITLE}}</h3>
+            <p>{{CANDIDATE_CARD_1_TEXT}}</p>
+          </div>
+          <div class="card">
+            <h3>{{CANDIDATE_CARD_2_TITLE}}</h3>
+            <p>{{CANDIDATE_CARD_2_TEXT}}</p>
+          </div>
+          <div class="card">
+            <h3>{{CANDIDATE_CARD_3_TITLE}}</h3>
+            <p>{{CANDIDATE_CARD_3_TEXT}}</p>
+          </div>
+        </div>
+        <div>
+          <p class="eyebrow">For Candidates</p>
+          <h2>{{CANDIDATES_HEADING}}</h2>
+          <p>{{CANDIDATES_TEXT}}</p>
+          <a href="#contact" class="btn">Submit Your Info</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section" id="process">
+      <div class="container">
+        <p class="eyebrow center">How It Works</p>
+        <h2 class="center">{{PROCESS_HEADING}}</h2>
+        <div class="steps">
+          <div class="step"><span>1</span><h3>{{STEP_1_TITLE}}</h3><p>{{STEP_1_TEXT}}</p></div>
+          <div class="step"><span>2</span><h3>{{STEP_2_TITLE}}</h3><p>{{STEP_2_TEXT}}</p></div>
+          <div class="step"><span>3</span><h3>{{STEP_3_TITLE}}</h3><p>{{STEP_3_TEXT}}</p></div>
+          <div class="step"><span>4</span><h3>{{STEP_4_TITLE}}</h3><p>{{STEP_4_TEXT}}</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section section-alt" id="about">
+      <div class="container narrow center">
+        <p class="eyebrow">About {{BRAND_SHORT}}</p>
+        <h2>{{ABOUT_HEADING}}</h2>
+        <p>{{ABOUT_TEXT}}</p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container two-col">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Let's talk.</h2>
+          <p>{{CONTACT_LEAD}}</p>
+          <ul class="contact-list">
+            <li><strong>Email:</strong> <a href="mailto:{{EMAIL}}" class="js-email">{{EMAIL}}</a></li>
+            <li><strong>Phone:</strong> <span class="js-phone"><a href="tel:{{PHONE_TEL}}">{{PHONE}}</a></span></li>
+            <li><strong>Address:</strong> <span class="js-address">{{ADDRESS}}</span></li>
+          </ul>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="toggle">
+            <label><input type="radio" name="type" value="Employer" checked> I'm Hiring</label>
+            <label><input type="radio" name="type" value="Candidate"> I'm a Candidate</label>
+          </div>
+          <input type="text" name="name" placeholder="Full name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="tel" name="phone" placeholder="Mobile phone (optional)">
+          <input type="text" name="company" placeholder="Company / current role (optional)">
+          <textarea name="message" rows="4" placeholder="Tell us what you're looking for" required></textarea>
+
+          <!-- SMS opt-in (10DLC / A2P compliant): optional, unchecked by default, not required to submit -->
+          <fieldset class="consent">
+            <legend>Text message updates (optional)</legend>
+            <label class="consent-item">
+              <input type="checkbox" name="sms_consent_service" value="yes">
+              <span>By checking this box, I agree to receive recruiting and account-related text messages from <strong>{{BRAND_NAME}}</strong> at the mobile number provided, such as interview scheduling, application status updates, and replies to my inquiry. Message frequency varies. Message &amp; data rates may apply. Reply <strong>HELP</strong> for help or <strong>STOP</strong> to opt out at any time.</span>
+            </label>
+            <label class="consent-item">
+              <input type="checkbox" name="sms_consent_marketing" value="yes">
+              <span>By checking this box, I agree to receive job opportunity alerts and promotional text messages from <strong>{{BRAND_NAME}}</strong> at the mobile number provided. Message frequency varies. Message &amp; data rates may apply. Reply <strong>HELP</strong> for help or <strong>STOP</strong> to opt out at any time.</span>
+            </label>
+            <p class="consent-note">Consent to receive text messages is not a condition of any purchase or service, and you may submit this form without agreeing. Your mobile information will not be sold or shared with third parties for marketing purposes. See our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">SMS Terms &amp; Conditions</a>.</p>
+          </fieldset>
+
+          <button type="submit" class="btn btn-full">Send Message</button>
+          <p class="form-note">This opens your email app with your message ready to send.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>&copy; <span id="year"></span> <span class="js-legal-name">{{LEGAL_NAME}}</span>. All rights reserved.{{DBA_NOTE}}</span>
+      <nav class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">SMS Terms &amp; Conditions</a>
+        <a href="#top">Back to top &uarr;</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
