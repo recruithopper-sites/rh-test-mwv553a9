@@ -2,10 +2,10 @@
 // For 10DLC approval, legalName must match the legal business name registered
 // with The Campaign Registry (exactly as on your EIN / IRS paperwork).
 const SITE = {
-  legalName: {{LEGAL_NAME_JS}},
-  email: {{EMAIL_JS}},
-  phone: {{PHONE_JS}},
-  address: {{ADDRESS_JS}}
+  legalName: "Testco Recruiting LLC",
+  email: "test@example.com",
+  phone: "(555) 555-0100",
+  address: "100 Test Street, Austin, TX 78701"
 };
 // ==============================================================================
 
